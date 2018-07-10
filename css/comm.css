@@ -1,0 +1,719 @@
+@charset "utf-8";
+@import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
+/* CSS Document */
+/* reset */
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,textarea,p,blockquote,th,td,input,select,textarea,button {margin:0;padding:0;
+}
+fieldset,img {border:0 none}
+dl,ul,ol,menu,li {list-style:none}
+blockquote, q {quotes: none}
+blockquote:before, blockquote:after,q:before, q:after {content:'';content:none}
+input,select,textarea,button {vertical-align:middle}
+button {border:0 none;background-color:transparent;cursor:pointer}
+body {background:#fff}
+body,th,td,input,select,textarea,button {font-size:14px;line-height:1.5;font-family:'Noto Sans KR','맑은고딕', 'Malgun Gothic','돋움',dotum,sans-serif;color:#333} /* color값은 디자인가이드에 맞게사용 */
+
+a {color:#333;text-decoration:none}
+a:focus, a:active, a:hover {text-decoration:none}
+address,caption,cite,code,dfn,em,var {font-style:normal;font-weight:normal}
+/*구글 웹폰트 사용입니다.*/
+
+    /*font-family: 'IM Fell French Canon SC', serif;
+    font-family: 'IM Fell French Canon', serif;*/
+
+    /*공통된 설정에 대한 내용입니다.*/
+
+    .content{
+      margin-bottom: 80px;
+      letter-spacing: -1.5;
+    }
+    .
+    .gnb{
+      z-index: 100;
+      width: 100%;
+      top: 0;
+      left: 0;
+      background: #fff;
+    }
+    .area_gnb{
+      margin: 0 auto;
+      height: 100%;
+      width: 80%;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .menubar{
+     width: 50%;
+     padding: 15px 0;
+     margin: 0 auto;
+   }
+   .menubar li{
+     padding: 10px 15px;
+   }
+   .menubar li a{
+     font-size: 18px;
+     color: #333;
+     transition: all .2s;
+   }
+   .menubar li a:hover{
+     padding-bottom: 5px;
+     border-bottom: 3px solid indianred;
+     color: indianred;
+   }
+   .logo{
+    margin: 0 auto;
+     width: 10%;
+   }
+   .logo a {
+    display: block;
+     width: 100%;
+   }
+   .logo img{
+     width: 100%;
+     display: block;
+   }
+   .menubar ul{
+     display: flex;
+     justify-content: space-around;
+   }
+   .conA_top{
+     position: relative;
+     text-align: center;
+     display: block;
+     height: 540px;
+     background: url(../imgs/brand_banner2.jpg) center no-repeat;
+     background-size: cover;
+     margin-bottom: 80px;
+   }
+   .conA_top:before{
+     position: absolute;
+     display: block;
+     content: "";
+     width: 100%;
+     height: 100%;
+     background: rgba(100,96,102,0.5);
+     z-index: 1;
+   }
+
+   .conA_top .animatedParent{
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    margin-left: -430px;
+    z-index: 100; 
+    color: #fff;
+  }
+  .conA_top .animatedParent h1{
+    font-size: 65px;
+    letter-spacing: .15em;
+    font-weight: 600;
+  }
+  .conA_top .animatedParent p{
+    font-size: 16px;
+    letter-spacing: .05em;
+    font-weight: 300;
+    line-height:1;
+  }
+  .conA_top_button{
+    font-size: 16px;
+    padding: 10px 25px;
+    border: 2px solid #fff;
+    transition: all .5s;
+    display: inline-block;
+    color: #fff;
+    margin-top:30px;
+  }
+  .conA_top_button:hover{
+   color: #fff;
+   background-color: indianred;
+   border-color: indianred;
+ }
+
+
+/*.conA a{
+	position: absolute;
+	right: 15px;
+	top: 10%;
+	font-size: 20px;
+	color: #ddd;
+	z-index: 100;
+	padding: 10px 15px;
+  }*/
+  .conA_bottom{
+   height: 530px;
+ }
+ .area_conA_bottom{
+   display: flex;
+   justify-content: space-between;
+   width: 60%;   
+   height: 100%;
+   margin: 0 auto;
+ }
+ .conA_left{
+   display: flex;
+   flex-wrap: nowrap;
+   width: 50%;
+   height: 100%; 
+   box-sizing: border-box;
+   text-align: left;
+   background: #eee;
+ }
+ .conA_left_box, .right_box, .right_bigbox{
+   border: 2px solid #eee;
+   box-sizing: border-box; 
+ }
+ 
+ .conA_left_box{
+  padding: 70px;
+  background:  url(../imgs/conA_left_box.png) 0 0 no-repeat;
+  background-size: auto;
+  background-position: 48% 34%;
+}
+.conA_left_box img{
+ width: 60%;
+}
+.conA_left_box h3{
+  font-size: 25px;
+  font-weight: 500;
+  padding-top: 15px;
+}
+.conA_left_box p{
+  font-size: 13px;
+  font-weight: 300;
+  padding-top: 5px;
+}
+.conA_leftbox_button{
+  display: block;
+  font-size: 16px;
+  color: #fff;
+  background: #C8B2A5FF;
+  border-radius: 20px;
+  padding: 8px 15px;
+  margin-top: 40px;
+  text-align: center;
+}
+
+.g_a::before{
+ content: "";
+ display: block;
+ position: absolute;
+ width: 100%;
+ height: 100%;
+ top: 0;
+ left: 0;
+ transition: all .3s;
+}
+.g_a:hover::before{
+ background: rgba(0,0,0,.7);   
+}
+.conA_right{
+ width: 48%;
+ height: 100%;
+ display: flex;
+ justify-content: space-between;
+ flex-wrap: wrap;
+}
+.right_box{
+ position: relative;
+ overflow: hidden;
+ display: flex;
+ width: 47.5%;
+ height: 48%;
+ margin-bottom: 4%;
+}
+.right_bigbox{
+ position: relative;
+ width: 100%;
+ height: 48%;
+ box-sizing: border-box;
+ 
+}
+.right_box:hover .black_box{
+  opacity: 1;
+}
+.right_bigbox:hover .black_box{
+  opacity: 1;
+}
+.black_box{
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color:rgba(0,0,0,.45);
+  opacity: 0;
+  transition: all .3s;
+}
+.black_box a{
+  color: #fff;
+  font-size: 24px;
+}
+.right_box img{
+ display: block;
+ width: 100%;
+ object-fit: cover;
+ object-position: center;
+}
+.right_bigbox img{
+ display: block;
+ width: 100%;
+ height: 100%;
+ object-fit: cover;
+ object-position: center;
+}
+
+/*컨텐츠 B에 대한 설정입니다.*/
+.conB {
+ background: #eee;
+}
+.conB_bottom .animatedParent{
+ position: relative;
+ display: flex;
+ justify-content: space-between;
+ color: #333;
+ font-size: 17px;
+ width: 50%;
+ 
+}
+.conB_top .animatedParent{
+ position: relative;
+ display: flex;
+ justify-content: space-between;
+ color: #333;
+ font-size: 17px;
+}
+
+.conB .animatedParent>div{
+ background-color: #fff;
+ width: 20%;
+ padding: 1.3% 1.5%;
+
+
+}
+.img_box{
+ width: 100%;
+}
+.img_list{
+ margin: 0 auto;
+ display: flex;
+ width: 65%;
+ flex-wrap: wrap;
+ justify-content: space-between;
+ text-align: center;
+}
+.img_box{
+ overflow: hidden;
+}
+.conB .img_list img{
+ display: block;
+ object-fit: cover;
+ object-position: 50%;
+ width: 100%;
+ transition: all .3s;
+}
+.conB .img_list img:hover{
+ transform: scale(1.2)
+}
+.list_txt{
+ display: inline-block;
+ margin: 15px 0 10px 0;
+ font-size: 15px;
+}
+.list_txt:hover{
+  text-decoration: underline;
+  color:indianred;
+  transition: all .3s;
+}
+.price{
+  font-size: 20px;
+  transition: all .2s;
+}
+.price:hover{
+  font-size: 20px;
+  color:indianred;
+}
+
+.conB_top{
+  padding: 30px 0 80px 0px;
+}
+
+/*컨텐츠B에 대한 설정입니다.*/
+.conB_bottom{
+ display: flex;
+ height: 640px;
+}
+
+.conB_bottom .animatedParent img{
+ display: block;
+ object-fit: none;
+ object-position: 50% 72%;
+ height: 100%;
+ width: 100%;
+
+}
+.conB_img_box a{
+ position: absolute;
+ top: 3%;
+ left: 4%;
+ z-index: 1000;
+ padding: 5px 9px;
+ background: #444;
+ color: #fff;
+ font-size: 13px;
+ transition: all .4s;
+}
+.conB_img_box a:hover{
+ background: indianred;
+}
+.conB_img_box{
+
+}
+.conB_wrap{
+ background: #efefef;
+ width: 50%;
+}
+.conB_txt h2{
+
+ font-size: 3em;
+ font-weight: 500;
+ margin-bottom: 7px;
+}
+.conB_txt{
+ padding: 7%;   
+ box-sizing: border-box;
+ height: 100%;
+ background: linear-gradient(rgba(255,255,255,0.7) 0%,rgba(255,255,255,0.7) 100%), url(../imgs/woodtexture.png) repeat 0 0;
+ background-size: cover;
+}
+.conB_txt p{
+ line-height: 1.8;
+ padding-top: 30px;
+ float: left;
+ color: #444;
+}
+
+.conB_profile{
+ display: flex;
+}
+hr.style-two2 {
+  width: 60%;
+  float: left;
+  border: 0;
+  height: 1px;
+  margin-top: 13px;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, .75), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
+
+.conB_button{
+  display: inline-block;
+  font-size: 16px;
+  color: #fff;
+  background: #C8B2A5FF;
+  border-radius: 20px;
+  padding: 8px 15px;
+  margin-top: 30px;
+  text-align: center;
+}
+.conB_button{
+ width: 25%;
+}
+.conB_button:hover{
+ color: #fff;
+ background-color: indianred;
+ border-color: indianred;
+}
+
+/*컨텐츠 C에 대한 설정입니다.*/
+
+/*.conC .animatedParent{
+   position: relative;
+   display: flex;
+   
+   color: #333;
+   font-size: 17px;
+   margin-bottom: 70px;
+   }*/
+
+
+   .conC_img_list{
+    margin: 0 auto;
+    display: flex;
+    width: 65%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    text-align: center;
+  }
+  .conC .animatedParent{
+    position: relative;
+    width: 18%;
+    padding: 5px 1% ;
+    margin-bottom: 60px;
+  }
+  .conC .animated{
+    border: 1px solid #eee;
+    box-sizing: border-box;
+  }
+  .img_box{
+    width: 100%;
+  }
+  .conC_img_box{
+    overflow: hidden;
+  }
+  .conC_img_box i{
+    margin-right: 2px;
+  }
+  .conC_img_box .conC_flag{
+    position: absolute;
+    top: 3%;
+    left: 4%;
+    z-index: 1000;
+    padding: 5px 9px;
+    background: #444;
+    color: #fff;
+    font-size: 13px;
+    transition: all .4s;
+  }
+  .conC_img_box a:hover{
+    background: indianred;
+  }
+  .buy_button{
+    position: absolute;
+    display: block;
+    bottom: -15px;
+    left: 50%;
+    background: #B5AD9FFF;
+    padding: 7px 0;
+    width: 124px;
+    color: #fff;
+    margin-left: -62px;
+
+
+
+  }
+  .conC_img_list img{
+    display: block;
+    object-fit: cover;
+    object-position: 50%;
+    width: 100%;
+    transition: all .3s;
+  }
+  .conC_img_list img:hover{
+    transform: scale(1.2)
+  }
+  .conC_list_txt{
+    font-size: 13px;
+    text-align: left;
+    display: block;
+    padding: 10px 10px 30px 10px;
+  }
+  /*컨텐츠 타이틀에 대한 설정입니다.*/
+  .con_tit{
+  font-weight: 500;
+    text-align: center;
+    width: 80%;
+    margin: 30px auto -15px;
+    color: #444;
+  }
+  .con_tit h2{
+    margin-bottom: 80px;
+    font-size: 4em;
+  font-weight: 500;
+
+  }
+  .con_tit p{
+    font-size: 20px;
+    margin-bottom: 20px; 
+  }
+  .animatedParent span{
+    color:#F7C9C9FF;
+  }
+  .con_tit span{
+    color:#B5AD9FFF;
+  }
+
+  /* Gradient transparent - color - transparent */
+
+  hr.style-two {
+   width: 60%;
+   border: 0;
+   height: 1px;
+   background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+ }
+ /*컨텐츠 D에 대한 설정입니다.*/
+ .conD{
+   padding: 30px 0 80px 0;
+   background: #eee;
+ }
+ .conD_img_list{
+   margin: 0 auto;
+   display: flex;
+   width: 80%;
+   flex-wrap: wrap;
+   justify-content: space-between;
+   text-align: center;
+ }
+ .conD .animated{
+   box-sizing: border-box;
+ }
+ .conD_img_box{
+   position: relative;
+   text-align: left;
+ }
+ .conD_img_box i{
+   margin-right: 2px;
+ }
+ .conD_img_box a{
+   display: block;
+   position: absolute;
+   z-index: 1000;
+   bottom: 0;
+   left: 0;
+   width: 50%;
+   padding: 8px 10px;
+   background: #B5AD9FFF;
+   color: #fff;
+   font-size: 13px;
+   transition: all .2s;
+ }
+ .conD_img_box a:hover{
+  background: #A59C8CFF;
+}
+.conD_img_list img{
+ display: block;
+ object-fit: cover;
+ object-position: 50%;
+ width: 100%;
+}
+.conD_img_txt{
+ text-align: left;
+ display: block;
+
+}
+.conD_img_txt h4{
+ font-weight: 500;
+ letter-spacing: -.05em;
+ font-size: 17px;
+ padding-top: 10px;
+}
+.conD_img_txt h4:hover{
+ color: indianred;
+}
+.conD_img_txt p{
+  font-weight: 300;
+  font-size: 14px;  
+  padding-top: 10px;
+}
+.conD_img_txt small:hover{
+ color: indianred;
+ text-decoration: underline;
+}
+.conD .animatedParent{
+ position: relative;
+ padding: 5px 1%;
+ color: #333;
+ font-size: 17px;
+ width: 31%;
+}
+.conD .animated{
+ border:2px solid #efefef;
+
+}
+
+.diary_txt_box p{
+	line-height: 2em;
+	font-size: 14px;
+	color: #777;
+}
+.diary_txt_box a{
+	line-height: 2em;
+	font-size: 14px;
+	color: #777;
+}
+.conD_wrap_button{
+	text-align: center;
+	margin: 70px 0;
+}
+.conD_button{
+	font-size: 16px;
+	padding: 15px 25px;
+	border: 2px solid #333;
+	transition: all .5s;
+	display: inline-block;
+}
+.conD_button:hover{
+	color: #fff;
+	background-color: indianred;
+	border-color: indianred;
+}
+.col a, col p{
+	display: inline;
+}
+/*footer 대한 설정입니다.*/
+.footer{
+	position: relative;
+	width: 100%;
+	text-align: center;
+  margin-bottom: 0;
+}
+.footer .con_tit{
+  margin: -30px auto 35px;
+}
+.footer .con_tit h2{
+  margin-bottom:  0;
+}
+.footer_bottom{
+  border-top: 1px solid #eee;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 60%;
+  margin: 0 auto;
+  padding:20px 0;
+
+}
+.e-mail a{
+  color: #333;
+}
+.e-mail a:hover{ 
+  color: indianred;
+}
+.footer_sns{
+  display: flex;
+}
+.footer_sns i{
+  color: #777;
+  font-size: 20px;
+  padding: 8px 10px;
+}
+.footer_sns i:hover{
+  color: indianred;
+  font-size: 20px;
+  padding: 8px 10px;
+}
+.footer_button1{ 
+  font-size: 16px;
+  padding: 15px 25px;
+  border: 2px solid #333;
+  transition: all .5s;
+  display: block;
+  width: 10%;
+  margin: 0 auto;
+}
+.footer_button1:hover{
+  color: #fff;
+  background-color: indianred;
+  border-color: indianred;
+}
+.footer_button2{
+  display: block;
+  font-size: 16px;
+  color: #fff;
+  background: #C8B2A5FF;
+  border-radius: 20px;
+  padding: 8px 15px;
+  width: 10%;
+  margin: 40px auto;
+}
