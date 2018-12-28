@@ -345,13 +345,16 @@ address,caption,cite,code,dfn,em,var {font-style:normal;font-weight:normal}
  display: flex;
  height: 640px;
 }
-
+.conB_bottom .animatedParent .animated{
+  width: 100%;
+}
 .conB_bottom .animatedParent img{
  display: block;
- object-fit: none;
+ object-fit: cover;
  object-position: 50% 72%;
  height: 100%;
  width: 100%;
+
 
 }
 .conB_img_box a{
@@ -619,9 +622,7 @@ hr.style-two2 {
 }
 .conD .animated{
  border:2px solid #efefef;
-
 }
-
 .diary_txt_box p{
 	line-height: 2em;
 	font-size: 14px;
